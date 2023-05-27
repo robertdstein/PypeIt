@@ -975,5 +975,5 @@ def lst_to_array(lst, mask=None):
     if isinstance(lst[0], units.Quantity):
         return units.Quantity(lst)[mask]
     else:
-        return np.array(lst)[mask]
+        return np.array(lst, dtype=object)[mask]
 
